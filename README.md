@@ -1,10 +1,10 @@
 # Architecting artificial systems
 
-An Agent Skill for architecting artificial systems, whether software, organizations or mixtures of the two, under one shared governance. It gives a model of such systems: one system seen from logical, actor and implementation perspectives, whose actors organize vertically by delegation and horizontally by services, requests, allocation and support, in structures that need not match, together with layers, boundaries, sources of truth and trusted boundaries. It gives a controlled vocabulary for these, the activities around a system from formulating what is required to evolving what already runs, and sixteen case studies of real systems read in that vocabulary, among them Kubernetes controllers, Google's Borg, US joint command, the FAA's air traffic organization, VistA consults, Estonia's X-Road and the 737 MAX's MCAS. The model and its heuristics are presented as ways of understanding, each with what it is good for and where it stops, not as rules.
+An Agent Skill for architecting artificial systems, whether software, organizations or mixtures of the two, under one shared governance. It looks at a system at two layers: a metaphysical layer, what the system is in its own terms (the things it deals in and how they relate, what happens to them, who acts and answers for what, how work is handed down and coordinated across), and a physical layer, whatever carries that out, from programs and machines to people and organizations, each working by its own field's principles, which the Skill does not contain. Of anything a system keeps that matters it asks how it comes to be and who may change it. It describes the activities around a system, from formulating what is required to evolving what already runs, and it reads sixteen real systems in this way, among them Kubernetes controllers, Google's Borg, US joint command, the FAA's air traffic organization, VistA consults, Estonia's X-Road and the 737 MAX's MCAS. It is written as inquiry rather than as a formal system, with each field's own words kept where they serve, and its heuristics are ways of understanding, each with what it is good for and where it stops, not rules.
 
 ## Who it is for
 
-Anyone, person or AI agent, who designs, reviews, diagnoses or changes a software system, an organization or a system that mixes the two: deciding what should exist and who owns it, where a decision, fact, boundary or layer belongs, how units delegate, request services and share resources, why a difficulty keeps returning, or how to change a system that is already running. It is written first for frontier language models, in narrative prose, and serves people who brief them, or who want one vocabulary for structure across software and organizations.
+Anyone, person or AI agent, who designs, reviews, diagnoses or changes a software system, an organization or a system that mixes the two: deciding what should exist, how the things that matter come to be and who may change them, where a decision, boundary or layer belongs, how units delegate, request services and share resources, why a difficulty keeps returning, or how to change a system that is already running. It is written first for frontier language models, in narrative prose, and serves people who brief them, or who want one way of thinking about structure across software and organizations.
 
 ## Installing
 
@@ -20,18 +20,18 @@ Other environments that follow the Agent Skills specification can load the direc
 
 ## How it is used
 
-Claude Code reads the name and description from the frontmatter of `SKILL.md` and loads the Skill when a task matches; it can also be invoked by name, as `/architecting-artificial-systems`. `SKILL.md` carries the whole in brief: the scope, the model, the vocabulary, the activities, a pointer to each case, and when to read further. The references are opened only when a question needs their depth: `references/model.md` for questions of structure, `references/activities.md` for questions about the work, and a case when a situation resembles it. The closing section of `SKILL.md` says how the Skill is revised when experience shows it wrong.
+Claude Code reads the name and description from the frontmatter of `SKILL.md` and loads the Skill when a task matches; it can also be invoked by name, as `/architecting-artificial-systems`. `SKILL.md` carries the whole in brief: the scope, the two layers, the model in brief, the activities, a pointer to each case, and when to read further. The references are opened only when a question needs their depth: `references/model.md` for questions of structure, `references/activities.md` for questions about the work, and a case when a situation resembles it. The closing section of `SKILL.md` says how the Skill is revised when experience shows it wrong.
 
 ## Layout
 
 ```
 architecting-artificial-systems/
-  SKILL.md                         the entry: scope, the model in brief, vocabulary, activities, cases, revising
+  SKILL.md                         the entry: scope, the two layers, the model in brief, activities, cases, revising
   README.md                        this file
   CHANGES.md                       the change record, newest first
   LICENSE                          MIT
   references/
-    model.md                       the engineering model in nine parts
+    model.md                       the model in ten parts
     activities.md                  formulating, architecting, realizing, operating and observing,
                                    diagnosing and reformulating, evolving, describing a design,
                                    organizing the work
